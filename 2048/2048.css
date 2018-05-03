@@ -1,0 +1,224 @@
+#box{
+	display: block;  		/*块级元素*/
+	margin:40px auto;  	/*距离页面上下40像素*/
+	width: 500px;  		/*宽度500像素*/
+	height: 700px; 		/*高度700像素*/
+	border:4px solid black;  /*边框：4像素 实线 黑色*/
+	border-radius: 6px; 	/*边框角的弧度：6像素*/
+	position: relative; 	/*位置：相对布局*/
+	background: -webkit-linear-gradient(bottom, orange , #D2601E); 
+  	background: -o-linear-gradient(bottom, orange , #D2601E); 
+  	background: -moz-linear-gradient(bottom, orange , #D2601E); 
+  	background: linear-gradient(to bottom, orange , #D2601E); 
+  	
+  	
+}
+
+#icon{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: #09c;
+	border-radius: 10px;
+	left: 30px; 	/*距左30像素*/
+	top:30px; 	/*距上30像素*/
+	line-height: 100px; /*行高100像素，为了让文字在中心*/
+	text-align: center; /*文字居中*/
+	font-size: 30px; /*字体大小30像素*/
+
+}
+
+#score_box{
+	position: absolute;
+	width: 140px;
+	height: 100px;
+	left: 180px;
+	top: 30px;
+	background: #BC8F8F;	
+	border-radius: 10px;
+}
+
+#score_box p{
+	text-align: center;
+	font-size: 20px;
+}
+#time_box{
+	position: absolute;
+	width: 140px;
+	height: 100px;
+	left: 340px;
+	top: 30px;
+	background: #BC8F8F;	
+	border-radius: 10px;
+}
+
+#time_box p{
+	text-align: center;
+	font-size: 20px;
+}
+
+#instruction{
+	position: absolute;
+	width: 450px;
+	height: 30px;
+	line-height: 30px;
+	text-align: left;
+	font-size: 25px;
+	left: 30px;
+	top:140px;
+	letter-spacing: 3px; /*文字间间距为3像素*/
+}
+
+#achivement{
+	position: absolute;
+	width: 450px;
+	height: 20px;
+	text-align: center;
+	font-size: 22px;
+	left: 30px;
+	top:185px; 
+	color:red;
+	opacity: 0; 	/*透明度为0*/	
+}
+#game_box{
+	margin:30px auto;
+	margin-top: 220px;
+	width: 450px;
+	height: 450px;
+	background: #bbada0;
+	border-radius: 10px;
+	position: relative;
+}
+
+.grid{
+	float: left; 	/*浮动：向左*/
+	width: 100px;
+	height: 100px;
+	background: #ccc0b3;
+	border-radius: 6px;
+	margin: 10px 0 0 10px; /*外边距：上10px 右 下 左10px*/
+}
+
+.cell{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background: #ccc0b3;
+	border-radius: 6px;
+	text-align: center;
+	line-height: 100px;
+	font-size: 30px;
+}
+
+/*设置所有颜色*/
+.n2{background-color:#eee3da;}
+.n4{background-color:#ede0c8;}
+.n8{background-color:#f2b179;}
+.n16{background-color:#f59563;}
+.n32{background-color:#f67c5f;}
+.n64{background-color:#f65e3b;}
+.n128{background-color:#edcf72;}
+.n256{background-color:#edcc61;}
+.n512{background-color:#9c0;}
+.n1024{background-color:#33b5e5;}
+.n2048{background-color:#09c;}
+.n4096{background-color:#a6c;}
+.n8,.n16,.n32,.n64,.n128,.n256,.n512,.n1024,.n2048,.n4096{color:#fff;}
+
+
+#zhedang{
+	position: absolute;
+	display: block;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.8);
+	top: 0px;
+	left: 0px;
+/*	opacity: 0.8;*/
+	display: none;
+	z-index: 998;
+}
+
+#tishi{
+	width:400px;
+	height: 600px;
+	border-radius: 6px;
+	border: 4px solid white;
+	margin: 80px auto;
+	background: orange;
+	position: relative;
+	z-index: 999
+}
+
+#head{
+	width: 280px;
+	height: 80px;
+	border-radius: 6px;
+	border: 6px solid white;
+	margin: 30px auto;
+	margin-bottom: 40px;
+	background:black;
+	text-align: center;
+	line-height: 80px;
+	font-size: 50px;
+	letter-spacing: 10px;
+	color: green;
+}
+
+#highestScore{
+	width: 280px;
+	height: 60px;
+	border-radius: 6px;
+	border: 6px solid white;
+	margin: 20px auto;
+	background:black;
+	line-height: 60px;
+	text-align: left;
+	font-size: 30px;
+	color:white;
+}
+
+#useTime{
+	width: 280px;
+	height: 60px;
+	border-radius: 6px;
+	border: 6px solid white;
+	margin: 20px auto;
+	background:black;
+	line-height: 60px;
+	text-align: left;
+	font-size: 30px;
+	color:white;	
+}
+
+#calHighestScore{
+	width: 340px;
+	height: 60px;
+	border-radius: 6px;
+	border: 6px solid white;
+	margin: 20px auto;
+	background:black;
+	line-height: 60px;
+	text-align: left;
+	font-size: 30px;
+	color:white;
+}
+
+#restart{
+	width: 240px;
+	height: 100px;
+	border-radius: 6px;
+	border:4px solid white;
+	margin: 20px auto;
+	margin-top:50px; 
+	background:black;
+	line-height: 100px;
+	text-align: center;
+	font-size: 40px;
+	color:white;	
+	cursor: pointer;
+}
+
+#restart:hover{
+	background: green;
+}

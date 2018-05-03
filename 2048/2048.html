@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>2048小游戏练习</title>
+	<link rel="stylesheet" type="text/css" href="2048.css">
+	<script src="2048.js"></script>
+</head>
+<body>
+	<div id="box">
+		<div id="icon">2048</div>  	 <!--2048的Icon-->
+		<div id="score_box">		<!--分数的盒子-->
+			<p >分数</p>
+			<p id="score">0</p>	           
+		</div>
+		<div id="time_box">		<!--时间的盒子-->
+			<p>时间</p>
+			<p id="timeShow">00:00</p>	           
+		</div>
+		<div id="instruction">合并这些数字以得到2048方块！</div>
+		<div id="achivement"></div>    <!--动态显示成就的区域-->
+		<div id="game_box"> 
+
+			<!--背景单元格-->
+			<div id="g00" class="grid"></div>
+			<div id="g01" class="grid"></div>
+			<div id="g02" class="grid"></div>
+			<div id="g03" class="grid"></div>
+
+			<div id="g10" class="grid"></div>
+			<div id="g11" class="grid"></div>
+			<div id="g12" class="grid"></div>
+			<div id="g13" class="grid"></div>
+
+			<div id="g20" class="grid"></div>
+			<div id="g21" class="grid"></div>
+			<div id="g22" class="grid"></div>
+			<div id="g23" class="grid"></div>
+
+			<div id="g30" class="grid"></div>
+			<div id="g31" class="grid"></div>
+			<div id="g32" class="grid"></div>
+			<div id="g33" class="grid"></div>
+
+
+			<!--前景格-->
+			<div id="c00" class="cell"></div>
+			<div id="c01" class="cell"></div>
+			<div id="c02" class="cell"></div>
+			<div id="c03" class="cell"></div>
+
+			<div id="c10" class="cell"></div>
+			<div id="c11" class="cell"></div>
+			<div id="c12" class="cell"></div>
+			<div id="c13" class="cell"></div>
+
+			<div id="c20" class="cell"></div>
+			<div id="c21" class="cell"></div>
+			<div id="c22" class="cell"></div>
+			<div id="c23" class="cell"></div>
+
+			<div id="c30" class="cell"></div>
+			<div id="c31" class="cell"></div>
+			<div id="c32" class="cell"></div>
+			<div id="c33" class="cell"></div>              <!--游戏区域-->
+		</div>
+	</div>
+
+	<div id="zhedang">
+		<div id="tishi">
+			<div id="head">真遗憾!</div>
+			<div id="highestScore">您的分数是:</div>
+			<div id="useTime">您的时间是:</div>
+			<div id="calHighestScore">您历史最高分是:</div>
+			<div id="restart">restart?</div>
+		</div>
+	</div>
+</body>
+</html>
